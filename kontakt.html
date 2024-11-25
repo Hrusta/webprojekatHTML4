@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Rentify</title>
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif; font-size: 10px; margin: 0; padding: 0; background-color: lightblue;">
+
+    <header style="background: linear-gradient(to right, crimson, #343131); color: white; padding: 25px;">
+        <h1 style="padding-top: 30px; font-size: 2.4rem; text-align: center; margin: 0;">
+            Kontaktirajte <span style="color: white; font-style: italic; text-shadow: 1px 1px 10px black;">Rentify</span>
+        </h1>
+        <table style="width: 100%; margin-top: 20px; border-spacing: 10px; text-align: center;">
+            <tr>
+                <td style="padding: 10px;">
+                    <a href="index.html" 
+                    style="color: white; font-size: 1.4rem; text-decoration: none; padding: 10px 20px; background-color: transparent; cursor: pointer;">
+                       Početna
+                    </a>
+                </td>
+                <td style="padding: 10px;">
+                    <a href="onama.html" 
+                       style="color: white; font-size: 1.4rem; text-decoration: none; padding: 10px 20px; background-color: transparent; cursor: pointer;">
+                       O nama
+                    </a>
+                </td>
+                <td style="padding: 10px;">
+                    <a href="galerija.html" 
+                       style="color: white; font-size: 1.4rem; text-decoration: none; padding: 10px 20px; background-color: transparent; cursor: pointer;">
+                       Galerija
+                    </a>
+                </td>
+                <td style="padding: 10px;">
+                    <a href="kontakt.html" 
+                    style="text-decoration: underline; text-decoration-color: white; text-decoration-thickness: 2px; font-size: 1.4rem; padding: 10px 20px; color: white; cursor: pointer;">
+                       Kontakt
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <section style="padding: 50px; text-align: center; background-color: #f0f2f5;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #343131; font-weight: 600;">Kontakt Forma</h2>
+        <form method="POST" action="mailto:nekretnine@rentify.com" 
+              style="max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; 
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); border: 1px solid #ddd;">
+            
+            <label for="ime" style="font-size: 1.4rem; color: #555;">Vaše Ime:</label><br>
+            <input type="text" id="ime" name="ime" placeholder="Unesite svoje ime" 
+                   style="margin: 10px 0 20px; padding: 10px; font-size: 1rem; width: 100%; 
+                   border: 1px solid #ccc; border-radius: 8px;" required><br>
+            
+            <label for="email" style="font-size: 1.4rem; color: #555;">Email Adresa:</label><br>
+            <input type="email" id="email" name="email" placeholder="Unesite svoj email" 
+                   style="margin: 10px 0 20px; padding: 10px; font-size: 1rem; width: 100%; 
+                   border: 1px solid #ccc; border-radius: 8px;" required><br>
+    
+            <label for="telefon" style="font-size: 1.4rem; color: #555;">Broj Telefona:</label><br>
+            <input type="tel" id="telefon" name="telefon" placeholder="Unesite svoj broj telefona" 
+                   style="margin: 10px 0 20px; padding: 10px; font-size: 1rem; width: 100%; 
+                   border: 1px solid #ccc; border-radius: 8px;"><br>
+    
+            <label for="vrsta_nekretnine" style="font-size: 1.4rem; color: #555;">Vrsta Nekretnine:</label><br>
+            <select id="vrsta_nekretnine" name="vrsta_nekretnine" 
+                    style="padding: 10px; font-size: 1rem; width: 100%; margin-bottom: 20px; 
+                    border: 1px solid #ccc; border-radius: 8px;" required>
+                <option value="" disabled selected>Odaberite vrstu nekretnine</option>
+                <option value="stan">Stan</option>
+                <option value="kuca">Kuća</option>
+                <option value="poslovni_prostor">Poslovni Prostor</option>
+            </select><br>
+    
+            <label for="poruka" style="font-size: 1.4rem; color: #555;">Poruka:</label><br>
+            <textarea id="poruka" name="poruka" rows="5" placeholder="Napišite svoju poruku" 
+                      style="margin: 10px 0 20px; padding: 10px; font-size: 1rem; width: 100%; 
+                      border: 1px solid #ccc; border-radius: 8px;" required></textarea><br>
+    
+            <label style="font-size: 1.4rem; color: #555;">Preferirani Način Kontakta:</label><br>
+            <div style="margin: 10px 0 20px; font-size: 1rem;">
+                <label style="margin-right: 15px;">
+                    <input type="radio" name="kontakt" value="email" checked> Email
+                </label>
+                <label>
+                    <input type="radio" name="kontakt" value="telefon"> Telefon
+                </label>
+            </div>
+    
+            <button type="submit" 
+                    style="padding: 12px 25px; font-size: 1.2rem; color: white; background: crimson; 
+                    border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s;">
+                Pošalji
+            </button>
+            <button type="reset" 
+                    style="padding: 12px 25px; font-size: 1.2rem; color: white; background: gray; 
+                    border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; margin-left: 15px;">
+                Poništi
+            </button>
+        </form>
+    </section>
+    
+
+    <footer style="background: linear-gradient(to right, crimson, #343131); color: white; text-align: center; padding: 10px; font-size: 1rem;">
+        &copy; 2024 Rentify
+    </footer>
+
+</body>
+
+</html>
